@@ -1,0 +1,3 @@
+<resources>
+    <style name="Theme.DragonGotchi" parent="android:Theme.Material.NoActionBar" />
+</resources>

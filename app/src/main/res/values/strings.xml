@@ -1,0 +1,243 @@
+<resources>
+    <string name="app_name">DragonGotchiGPS</string>
+    <string name="notification_channel_name">Entrenamiento en curso</string>
+    <string name="notification_channel_desc">Muestra tu sesion mientras DragonGotchi graba tu ruta</string>
+
+    <!-- ===== AdMob (banner de la pantalla Entrenar/mapa) =====
+         IDs reales de la cuenta del usuario. NO cambiar salvo que se
+         cree otra unidad de anuncio en la consola de AdMob. -->
+    <string name="admob_app_id">ca-app-pub-6505324142339269~2679910246</string>
+    <string name="admob_banner_unit_id">ca-app-pub-6505324142339269/7580134702</string>
+
+    <!-- ===== Navegacion ===== -->
+    <string name="loading">Cargando...</string>
+    <string name="nav_my_dragon">Mi dragon</string>
+    <string name="nav_train">Entrenar</string>
+    <string name="nav_training_ongoing">🔴 En curso</string>
+    <string name="nav_history">Historial</string>
+    <string name="nav_settings">Ajustes</string>
+    <string name="back">Atras</string>
+
+    <!-- ===== Tipos de actividad ===== -->
+    <string name="activity_run">Correr</string>
+    <string name="activity_walk">Caminar</string>
+    <string name="activity_bike">Bici</string>
+
+    <!-- ===== Inicio ===== -->
+    <string name="home_subtitle">Entrena. Suma pasos. Haz crecer a tu dragon.</string>
+    <string name="home_lifetime_distance">Distancia total</string>
+    <string name="home_lifetime_steps">Pasos totales</string>
+    <string name="home_sessions">Sesiones</string>
+    <string name="home_total_exp">EXP total</string>
+    <string name="home_view_ongoing">▶ Ver entrenamiento en curso</string>
+    <string name="home_start">🏃 Iniciar entrenamiento</string>
+    <string name="home_rewards">🎁 Recompensas</string>
+    <string name="home_evolutions">🐉 Evoluciones</string>
+    <string name="home_rule">Regla: 1 EXP cada %1$d pasos. Nivel 1→2: %2$d EXP, y cada nivel cuesta un 50%% mas. ¡El nivel 15 es el Dragon Ancestral Gigante!</string>
+
+    <!-- ===== Mascota (TamagotchiView) ===== -->
+    <string name="pet_level_badge">⚜ NIVEL %1$d · %2$s ⚜</string>
+    <string name="pet_max_level">⭐ ¡NIVEL MAXIMO! Dragon Ancestral alcanzado ⭐</string>
+    <string name="pet_exp_progress">EXP: %1$d / %2$d - faltan %3$d pasos para evolucionar</string>
+    <string name="pet_aura_active">✨ Aura activa</string>
+    <string name="pet_shiny_active">🌟 Shiny activo</string>
+
+    <!-- ===== Estadisticas ===== -->
+    <string name="stat_time">Tiempo</string>
+    <string name="stat_distance">Distancia</string>
+    <string name="stat_pace">Ritmo</string>
+    <string name="stat_calories">Calorias</string>
+    <string name="stat_steps">Pasos</string>
+    <string name="stat_speed">Velocidad</string>
+    <string name="stat_avg_pace">Ritmo medio</string>
+    <string name="stat_exp_gained">EXP ganada</string>
+    <string name="stat_max_speed">Vel. max</string>
+    <string name="stat_gps_points">Puntos GPS</string>
+    <string name="stat_rejected">Rechazados</string>
+    <string name="stat_steps_estimated_suffix"> (est.)</string>
+
+    <!-- ===== Entrenar (en vivo) ===== -->
+    <string name="track_new">Nuevo entrenamiento</string>
+    <string name="track_recording">🔴 Grabando...</string>
+    <string name="track_paused">⏸ En pausa</string>
+    <string name="track_type_label">Tipo de actividad:</string>
+    <string name="track_gps_searching">buscando...</string>
+    <string name="track_gps_accuracy">±%1$.0f m</string>
+    <string name="track_gps_stats">GPS: %1$s - Puntos OK: %2$d - Rechazados: %3$d</string>
+    <string name="track_gps_suspicious"> - ⚠️ Sospechosos: %1$d</string>
+    <string name="track_last_rejected">Ultimo punto rechazado por el filtro anti-trampas: %1$s</string>
+    <string name="track_valid_yes">✅ Actividad ya valida: al finalizar se guardara y tiraras el dado 🎲</string>
+    <string name="track_valid_missing">🎲 %1$s para que cuente</string>
+    <string name="activity_valid_word">Actividad valida</string>
+    <string name="missing_steps">pasos: %1$d/%2$d</string>
+    <string name="missing_time">tiempo: %1$s/%2$s</string>
+    <string name="missing_wrap">Todavia no es valida (%1$s)</string>
+    <string name="track_btn_start">▶ Iniciar %1$s</string>
+    <string name="track_valid_rule">🎲 Actividad valida para guardarse y tirar el dado: minimo %1$d pasos y %2$s de duracion.</string>
+    <string name="track_background_note">Puedes bloquear el movil o salir de la app: el GPS seguira grabando en segundo plano.</string>
+    <string name="btn_pause">⏸ Pausar</string>
+    <string name="btn_finish">⏹ Finalizar</string>
+    <string name="btn_resume">▶ Reanudar</string>
+    <string name="dialog_finish_title">¿Finalizar entrenamiento?</string>
+    <string name="dialog_finish_valid">✅ Actividad valida: se guardara en tu historial, tu dragon ganara EXP (%1$d pasos ≈ %2$d EXP) y haras una tirada de recompensas 🎲 (1-100).</string>
+    <string name="dialog_finish_invalid">⛔ Todavia NO es una actividad valida (%1$s). Si finalizas ahora se descartara: no se guardara en el historial, no dara EXP y no habra tirada.</string>
+    <string name="dialog_btn_finish_roll">Finalizar y tirar 🎲</string>
+    <string name="dialog_btn_finish_discard">Finalizar y descartar</string>
+    <string name="dialog_btn_continue">Seguir entrenando</string>
+    <string name="toast_no_location">Sin ubicacion precisa no se puede grabar la ruta</string>
+    <string name="toast_invalid_prefix">⛔ Actividad no valida: se descarta (no se guarda, sin EXP y sin tirada). </string>
+    <string name="toast_level_up">🎉 ¡Tu dragon ha subido %1$d nivel(es)! +%2$d EXP. </string>
+    <string name="toast_exp_gain">🐉 +%1$d EXP. </string>
+    <string name="toast_reward_unlocked">🎲 Tirada %1$d: ¡nueva recompensa desbloqueada: %2$s! Mira en Recompensas (!)</string>
+    <string name="toast_no_reward">🎲 Tirada %1$d: sin recompensa esta vez</string>
+
+    <!-- ===== Mapa ===== -->
+    <string name="map_waiting_gps">🛰️ Esperando senal GPS... sal a cielo abierto</string>
+    <string name="map_center_dragon">🐲 Centrar en mi dragon</string>
+
+    <!-- ===== Historial ===== -->
+    <string name="history_title">📍 Historial de rutas</string>
+    <string name="history_summary">%1$d sesiones - %2$s km en total</string>
+    <string name="history_empty">Todavia no tienes entrenamientos guardados.\nPulsa \"Iniciar entrenamiento\" y sal a moverte: ¡tu huevo esta esperando! 🥚</string>
+    <string name="history_loading_session">Cargando sesion...</string>
+    <string name="history_suspicious">⚠️ Esta sesion fue marcada como sospechosa (demasiados puntos GPS rechazados por velocidad o ubicacion simulada).</string>
+    <string name="history_delete">🗑 Eliminar esta sesion</string>
+    <string name="dialog_delete_title">¿Eliminar sesion?</string>
+    <string name="dialog_delete_text">Se borrara la ruta y sus estadisticas. La EXP ya ganada por tu dragon no se pierde.</string>
+    <string name="btn_delete">Eliminar</string>
+    <string name="btn_cancel">Cancelar</string>
+
+    <!-- ===== Recompensas ===== -->
+    <string name="rewards_title">🎁 Recompensas</string>
+    <string name="rewards_how_title">🎲 Tirada de recompensas</string>
+    <string name="rewards_how_body">Al finalizar una actividad valida (minimo %1$d pasos y %2$d segundos) tiras un dado de 1 a 100. Cada recompensa tiene su intervalo fijo: nunca pueden tocar dos a la vez, y las ya desbloqueadas quedan anuladas para siempre.</string>
+    <string name="rewards_rolls_done">Tiradas realizadas: %1$d</string>
+    <string name="rewards_last_roll"> · Ultima tirada: 🎲 %1$d</string>
+    <string name="rewards_last_prize"> · Ultimo premio: %1$s %2$s</string>
+    <string name="rewards_current_chance"> · Probabilidad actual de premio: %1$d%%</string>
+    <string name="reward_unlocked">✅ Desbloqueada</string>
+    <string name="reward_locked">🔒 Bloqueada</string>
+    <string name="reward_locked_hint">Consiguela en la tirada al finalizar una actividad valida.</string>
+    <string name="aura_on">Aura: ON</string>
+    <string name="aura_off">Aura: OFF</string>
+    <string name="shiny_on">Shiny: ON</string>
+    <string name="shiny_off">Shiny: OFF</string>
+    <string name="activate_aura">Activar aura</string>
+    <string name="deactivate_aura">Desactivar aura</string>
+    <string name="activate_shiny">Activar shiny</string>
+    <string name="deactivate_shiny">Desactivar shiny</string>
+    <string name="chance_percent_range">Probabilidad: %1$d%% · numeros %2$s</string>
+    <string name="pet_always_available">Siempre disponible</string>
+    <string name="pet_in_use">✅ En uso ahora mismo</string>
+    <string name="pet_unlocked_hint">Desbloqueado: puedes usarlo cuando quieras</string>
+    <string name="pet_locked_hint">🔒 Bloqueado: tocalo en la tirada de recompensas</string>
+    <string name="pet_in_use_btn">En uso</string>
+    <string name="pet_use_btn">Usar %1$s</string>
+    <string name="rewards_no_reward_note">Sin recompensa: numeros 29-100 (72%). Si la tirada cae en el intervalo de algo que ya tienes, ese intervalo esta anulado y no toca nada (no se repite la tirada).</string>
+
+    <!-- Nombres y descripciones de recompensas/mascotas -->
+    <string name="reward_aura_name">Aura de dragon</string>
+    <string name="reward_aura_desc">Un aura brillante que rodea a tu dragon. Equipada se ve en «Mi dragon».</string>
+    <string name="reward_shiny_name">Sprite Shiny</string>
+    <string name="reward_shiny_desc">Version dorada y brillante del sprite de tu dragon.</string>
+    <string name="reward_dragon2_name">Dragon Escarlata</string>
+    <string name="reward_dragon2_desc">El dragon rojo de fuego: segundo dragon jugable, con sus 15 sprites propios y su version shiny.</string>
+    <string name="reward_dragon3_name">Zafiro</string>
+    <string name="reward_dragon3_desc">El dragon azul de escarcha y tormenta: tercer dragon jugable, con sus 15 sprites propios y su version shiny.</string>
+    <string name="pet_dragon1_name">Dragon Esmeralda</string>
+    <string name="pet_dragon2_name">Dragon Escarlata</string>
+    <string name="pet_dragon3_name">Dragon Zafiro</string>
+
+    <!-- ===== Evoluciones ===== -->
+    <string name="evo_title">🐉 Evoluciones del dragon</string>
+    <string name="evo_subtitle">15 niveles. Cada nivel cuesta un 50% mas de EXP que el anterior (1 EXP = 100 pasos).</string>
+    <string name="evo_level">Nivel %1$d - %2$s</string>
+    <string name="evo_locked_name">\?\?\?</string>
+    <string name="evo_locked_desc">Sigue entrenando para descubrir esta forma.</string>
+    <string name="evo_next_level">Para el siguiente nivel: %1$d EXP (%2$d pasos)</string>
+    <string name="evo_final_form">⭐ Forma final legendaria</string>
+
+    <!-- Etapas 1-15: nombre y descripcion -->
+    <string name="stage_01_name">Huevo Mistico</string>
+    <string name="stage_01_desc">Un huevo caliente que late cuando te mueves. Camina para hacerlo eclosionar.</string>
+    <string name="stage_02_name">Eclosion</string>
+    <string name="stage_02_desc">¡Ha nacido! Una cria asoma entre las cascaras.</string>
+    <string name="stage_03_name">Cria de Dragon</string>
+    <string name="stage_03_desc">Pequeño, torpe y con mucha hambre de kilometros.</string>
+    <string name="stage_04_name">Dragoncito</string>
+    <string name="stage_04_desc">Ya corre a tu lado sin tropezar (casi).</string>
+    <string name="stage_05_name">Joven Dragon</string>
+    <string name="stage_05_desc">Sus alas empiezan a fortalecerse.</string>
+    <string name="stage_06_name">Dragon Explorador</string>
+    <string name="stage_06_desc">Le encantan las rutas nuevas.</string>
+    <string name="stage_07_name">Dragon Veloz</string>
+    <string name="stage_07_desc">Cada vez cuesta mas seguirle el ritmo.</string>
+    <string name="stage_08_name">Dragon Guerrero</string>
+    <string name="stage_08_desc">Escamas duras y mirada de competicion.</string>
+    <string name="stage_09_name">Dragon Alado</string>
+    <string name="stage_09_desc">Primeros vuelos cortos sobre tu ruta.</string>
+    <string name="stage_10_name">Dragon de Fuego</string>
+    <string name="stage_10_desc">Ya escupe sus primeras llamas.</string>
+    <string name="stage_11_name">Dragon de Magma</string>
+    <string name="stage_11_desc">Su pecho arde como un volcan.</string>
+    <string name="stage_12_name">Dragon Solar</string>
+    <string name="stage_12_desc">Brilla con la energia de tus entrenamientos.</string>
+    <string name="stage_13_name">Dragon Real</string>
+    <string name="stage_13_desc">Corona ganada a base de constancia.</string>
+    <string name="stage_14_name">Dragon Titan</string>
+    <string name="stage_14_desc">Enorme. El suelo tiembla cuando entrenas.</string>
+    <string name="stage_15_name">Dragon Ancestral Gigante</string>
+    <string name="stage_15_desc">La leyenda maxima: solo llega quien nunca se rinde.</string>
+
+    <!-- ===== Ajustes ===== -->
+    <string name="settings_title">⚙️ Ajustes</string>
+    <string name="settings_weight_explain">El peso se usa para calcular las kilocalorias quemadas (kcal = MET x peso x horas).</string>
+    <string name="settings_weight_label">Tu peso (kg)</string>
+    <string name="settings_pet_name_label">Nombre de tu dragon</string>
+    <string name="settings_save">Guardar</string>
+    <string name="settings_saved">✅ Ajustes guardados</string>
+    <string name="settings_weight_error">Introduce un peso valido entre 30 y 250 kg</string>
+    <string name="settings_battery_tip">Consejo de bateria: si tu movil detiene el GPS en segundo plano, comprueba que la ubicacion este en \"Permitir siempre\" y, si tu movil lo necesita, pon el uso de bateria de la app en \"Sin restricciones\" desde los ajustes del sistema.</string>
+    <string name="settings_privacy">🍪 Opciones de privacidad</string>
+    <string name="settings_version">DragonGotchiGPS v%1$s</string>
+    <string name="settings_language">⚔️ IDIOMA ⚔️</string>
+    <string name="lang_es">Español</string>
+    <string name="lang_en">English</string>
+
+    <!-- ===== Bienvenida / permisos ===== -->
+    <string name="onb_welcome">🐉 Bienvenido a DragonGotchiGPS</string>
+    <string name="onb_intro">Para grabar tus rutas como Strava -tambien con la app minimizada o el movil bloqueado- y para que tu dragon gane EXP con tus pasos, necesitamos estos permisos.</string>
+    <string name="onb_loc_title">1. Ubicacion precisa</string>
+    <string name="onb_loc_desc">Imprescindible para dibujar tu ruta y calcular distancia/ritmo.</string>
+    <string name="onb_bg_title">2. Ubicacion en segundo plano (\"Permitir siempre\")</string>
+    <string name="onb_bg_desc">Permite seguir grabando con la app cerrada o la pantalla bloqueada. En Android 11+ debes elegirlo desde Ajustes: Permisos > Ubicacion > Permitir siempre.</string>
+    <string name="onb_steps_title">3. Pasos / actividad fisica</string>
+    <string name="onb_steps_desc">Tu dragon sube de nivel con pasos reales del podometro (1 EXP cada 100 pasos).</string>
+    <string name="onb_notif_title">4. Notificaciones</string>
+    <string name="onb_notif_desc">La notificacion \"Entrenamiento en curso\" mantiene vivo el servicio GPS en segundo plano.</string>
+    <string name="onb_battery_title">5. Consejo sobre la bateria 🔋</string>
+    <string name="onb_battery_desc">Consejo: en algunos moviles (Samsung, Xiaomi, Huawei...) el ahorro de bateria puede detener el GPS a mitad de entrenamiento. Si te ocurre, puedes poner manualmente el uso de bateria de DragonGotchiGPS en \"Sin restricciones\" desde los ajustes de tu telefono (Ajustes > Aplicaciones > DragonGotchiGPS > Bateria). Es opcional: la app funciona sin tocar nada de esto.</string>
+    <string name="btn_grant">Conceder</string>
+    <string name="btn_open_settings">Abrir ajustes</string>
+    <string name="onb_start">Empezar a entrenar 🏃</string>
+    <string name="onb_grant_at_least">Concede al menos la ubicacion precisa</string>
+    <string name="onb_skip">Omitir por ahora</string>
+    <string name="onb_footer">Puedes cambiar todo esto despues en Ajustes del sistema > Apps > DragonGotchiGPS.</string>
+
+    <!-- ===== Servicio de tracking ===== -->
+    <string name="svc_preparing_gps">Preparando GPS...</string>
+    <string name="svc_paused">Sesion en pausa</string>
+    <string name="svc_gps_disabled">La ubicacion del dispositivo esta desactivada: activala en Ajustes para grabar la ruta</string>
+    <string name="svc_gps_start_failed">No se pudo iniciar el GPS: %1$s</string>
+    <string name="svc_gps_no_permission">Falta el permiso de ubicacion precisa: concedelo en Ajustes > Aplicaciones</string>
+    <string name="svc_unknown_error">error desconocido</string>
+    <string name="reason_mock">Ubicacion falsa (mock) detectada</string>
+    <string name="reason_low_accuracy">Precision insuficiente (mantenla bajo 30 m)</string>
+    <string name="reason_reported_speed">Velocidad del GPS superior a 54 km/h (¿vehiculo?)</string>
+    <string name="reason_implausible_speed">Salto imposible entre puntos (¿teletransporte/vehiculo?)</string>
+    <string name="reason_jitter">Movimiento insignificante (ruido GPS)</string>
+    <string name="reason_invalid_time">Marca de tiempo invalida</string>
+    <string name="history_detail_title">Detalle de la ruta</string>
+    <string name="history_steps_count">%1$d pasos</string>
+    <string name="history_card_suspicious">⚠️ Sesión marcada como sospechosa por el filtro GPS</string>
+</resources>

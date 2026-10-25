@@ -1,0 +1,34 @@
+# Gradle y compilaciones
+.gradle/
+build/
+*/build/
+out/
+.kotlin/
+
+# Android Studio
+.idea/
+*.iml
+captures/
+
+# Configuraci?n local
+local.properties
+
+# Carpetas generadas
+.externalNativeBuild/
+.cxx/
+
+# APK y bundles generados
+*.apk
+*.aab
+
+# Firma de la app: NUNCA debe versionarse
+*.jks
+*.keystore
+*.p12
+*.pem
+key.properties
+keystore.properties
+
+# Sistema operativo
+.DS_Store
+Thumbs.db

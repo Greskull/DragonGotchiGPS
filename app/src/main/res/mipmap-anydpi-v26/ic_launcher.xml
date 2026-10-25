@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
+    <background android:drawable="@color/launcher_bg" />
+    <!--
+      ICONO DE LA APP: para poner tu imagen, sube tu PNG a
+      app/src/main/res/drawable/ic_launcher_foreground.png
+      REEMPLAZANDO el provisional (mismo nombre y carpeta).
+      No hay que tocar este XML ni ningun codigo.
+      Recomendado: PNG cuadrado 432x432 (o 1024x1024) con el personaje
+      centrado y margen generoso (zona segura de iconos adaptativos).
+    -->
+    <foreground android:drawable="@drawable/ic_launcher_foreground" />
+</adaptive-icon>

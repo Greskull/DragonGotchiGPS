@@ -1,0 +1,4 @@
+<resources>
+    <!-- Fondo del icono adaptativo: morado castillo de medianoche -->
+    <color name="launcher_bg">#241536</color>
+</resources>

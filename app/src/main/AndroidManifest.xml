@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Ubicacion precisa y en segundo plano -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <!-- Servicio en primer plano (obligatorio para trackear con pantalla bloqueada) -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_LOCATION" />
+    <!-- Notificaciones (Android 13+) y vibracion -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- Podometro hardware (Android 10+ requiere permiso en tiempo de ejecucion) -->
+    <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION" />
+    <!-- Mantener CPU despierta durante la sesion y pedir exencion de bateria -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- SIN permiso REQUEST_IGNORE_BATTERY_OPTIMIZATIONS: esta restringido
+         en Europa/Google Play. La app solo SUGIERE el ajuste con un texto
+         una unica vez en la pantalla de bienvenida; nunca abre ese ajuste. -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-feature android:name="android.hardware.location.gps" android:required="false" />
+    <uses-feature android:name="android.hardware.sensor.stepcounter" android:required="false" />
+
+    <application
+        android:name=".DragonGotchiApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DragonGotchi"
+        tools:targetApi="35">
+
+        <!-- AdMob: ID de la app (ver strings.xml: admob_app_id).
+             Ahora lleva el ID DE PRUEBA oficial de Google. -->
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/admob_app_id" />
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.DragonGotchi">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- CLAVE: el tracking NO vive en Compose. Vive en este Foreground Service,
+             independiente de la UI: sigue grabando con la app minimizada o el movil bloqueado. -->
+        <service
+            android:name=".location.LocationTrackingService"
+            android:enabled="true"
+            android:exported="false"
+            android:foregroundServiceType="location"
+            android:stopWithTask="false" />
+    </application>
+</manifest>
